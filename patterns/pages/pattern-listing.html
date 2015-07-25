@@ -29,7 +29,18 @@
 </head>
 <body>
   <div class="pl-max-width meta-layout">
-  Page load?
+  <div class="sp_xl pl-max-width">
+  <div class="g-inner">
+    <h1 class="tx_xl tx_light">Pattern List</h1>
+  </div>
+  <a class="grunticon" href="/grunticon/preview.html">Grunticon Preview of All Icons</a>
+</div>
+
+<script>
+  window.patternList = [{"name":"atoms","prettyName":"Atoms","children":[{"name":"button.hbs","prettyName":"Button","path":"/patterns/atoms/button.html"},{"name":"headings.hbs","prettyName":"Headings","path":"/patterns/atoms/headings.html"},{"name":"link.hbs","prettyName":"Link","path":"/patterns/atoms/link.html"}]},{"name":"molecules","prettyName":"Molecules","children":[{"name":"test.hbs","prettyName":"Test","path":"/patterns/molecules/test.html"}]},{"name":"organisms","prettyName":"Organisms","children":[{"name":"test.hbs","prettyName":"Test","path":"/patterns/organisms/test.html"}]},{"name":"pages","prettyName":"Pages","children":[{"name":"pattern-listing.hbs","prettyName":"Pattern Listing","path":"/patterns/pages/pattern-listing.html"},{"name":"test.hbs","prettyName":"Test","path":"/patterns/pages/test.html"}]}];
+</script>
+
+<div class="js-pattern-list pattern-list grid-root"><!-- this becomes populated with patterns --></div>
 </div>
   <script src="/js/app.js"></script>
 </body>
