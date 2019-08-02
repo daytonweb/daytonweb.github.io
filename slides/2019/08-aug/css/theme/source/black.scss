@@ -43,6 +43,22 @@ section.has-light-background {
 	}
 }
 
+.star:before {
+	content: '\2606'; /* &star; */
+	color: #E91E63;
+	padding-right: 20px;
+  }
+
+ .slides .indent { margin-left: 2em; }
+ 
+ .reveal .slides h2 { 
+	 color: #E91E63; 
+	//  border-bottom: 0; 
+	//  padding: 20px 0 10px 0; 
+	//  letter-spacing: -.05em; 
+	//  font-size: 2.4em; 
+	//  margin-bottom: 20px; 
+	}
 
 // Theme template ------------------------------
 @import "../template/theme";

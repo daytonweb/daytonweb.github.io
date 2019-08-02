@@ -7,6 +7,18 @@
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
+.star:before {
+  content: '\2606';
+  /* &star; */
+  color: #E91E63;
+  padding-right: 20px; }
+
+.slides .indent {
+  margin-left: 2em; }
+
+.reveal .slides h2 {
+  color: #E91E63; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
