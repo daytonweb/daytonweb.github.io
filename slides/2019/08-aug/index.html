@@ -6,26 +6,27 @@
 
 		<title>The Dayton Web Developers</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="../../shared/css/reset.css">
+		<link rel="stylesheet" href="../../shared/css/reveal.css">
+		<link rel="stylesheet" href="../../shared/css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="../../shared/lib/css/monokai.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../../shared/css/print/pdf.css' : '../../shared/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
 	<body>
 		<div class="reveal">
+			
 			<div class="slides">
-				<section>Slide 1
+				<section class="home">Slide 1
 						<h2>Dayton Web Developers: August 2019</h2>
 						<h3 class="star">News From the Dayton Web Developers</h3>
 						<p class="indent">&mdash; Allen May (<a href="https://twitter.com/AllenHMay">@AllenHMay</a>)</p>
@@ -37,7 +38,7 @@
 			</div>
 		</div>
 
-		<script src="js/reveal.js"></script>
+		<script src="../../shared/js/reveal.js"></script>
 
 		<script>
 			// More info about config & dependencies:
@@ -45,10 +46,10 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+					{ src: '../../shared/plugin/markdown/marked.js' },
+					{ src: '../../shared/plugin/markdown/markdown.js' },
+					{ src: '../../shared/plugin/notes/notes.js', async: true },
+					{ src: '../../shared/plugin/highlight/highlight.js', async: true }
 				]
 			});
 		</script>

@@ -16,6 +16,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .slides .indent {
   margin-left: 2em; }
 
+.home {
+  background: url(../../images/StratacacheTower.png) no-repeat center center fixed;
+  background-size: 100% auto; }
+
 .reveal .slides h2 {
   color: #E91E63; }
 
