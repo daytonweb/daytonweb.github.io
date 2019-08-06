@@ -57,7 +57,7 @@ body {
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.08em;
-  text-transform: uppercase;
+  text-transform: normal;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -74,7 +74,7 @@ body {
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: none; }
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); }
 
 /*********************************************
  * OTHER

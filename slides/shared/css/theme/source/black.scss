@@ -24,9 +24,9 @@ $headingColor: #fff;
 $mainFontSize: 42px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingTextShadow: none;
+$headingTextShadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+// $headingTextTransform: uppercase;
 $headingFontWeight: 600;
 $linkColor: #42affa;
 $linkColorHover: lighten( $linkColor, 15% );
@@ -55,6 +55,18 @@ section.has-light-background {
 	 background: url(../../images/StratacacheTower.png) no-repeat center center fixed; 
 	 background-size: 100% auto;
 	}
+
+li {
+	line-height: 1.5em;
+	list-style: none;
+	padding: .15em 0;
+}
+
+li:before {
+	content: '\029BF';
+	color: #E91E63;
+	padding-right: 20px;
+}
 
  .reveal .slides h2 { 
 	 color: #E91E63; 
