@@ -212,31 +212,84 @@
         </section>
       </section>
 
-      <!-- INDUSTRY NEWS -->
-      <section>
-        <section data-background-opacity=".5" data-background-image="../../shared/images/industry2.jpg">
-          <h1>Industry News</h1>
-        </section>
-      </section>
 
-      <!-- Languages, Libraries & Frameworks -->
-      <section>
-        <section data-background-opacity=".5" data-background-image="../../shared/images/html-js-css.png">
-          <h1>Languages, Libraries & Frameworks</h1>
-      </section>
-      <section>
+<!-- Languages, Libraries & Frameworks -->
+<section>
+    <section data-background-opacity=".5" data-background-image="../../shared/images/html-js-css.png">
+      <h1>Languages, Libraries & Frameworks</h1>
+  </section>
+    <section>
+        <h2>Chrome 76</h2>
+        <h3>Dark Mode Support</h3>
+        <pre>
+        @media (prefers-color-scheme: dark) {
+          body {
+            background-color: black;
+            color: white;
+          }
+        }
+      </pre>
+        Great overview of dark mode<br>
+        MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a><br>
+        CanIUse: <a href="https://caniuse.com/#search=prefers-color-scheme">prefers-color-scheme</a>
+
+    </section>
+    <section>
+        <h2>Mithril 2.0 Released <img src="../../shared/images/mithril-logo.png" style="width: 10%;"></h2>
+        Modern JS framework for building Single Page Applications
+        <ul>
+          <li><a href="https://mithril.js.org/change-log.html#v200">Released</a> July 24th</li>
+          <li>2.0 mostly formalizes minor breaking changes</li>
+          <li>Lightweight (10kb) React/Vue alternative</li>
+          <li>Plain ES5 syntax / KISS philosophy</li>
+      </ul>
+    </section>
+    <section>
+        <h2>Electron 6.0 Released<img src="../../shared/images/electron-logo.jpg" style="width: 10%;"></h2>
+        <ul>
+          <li><a href="http://electronjs.org/blog/electron-6-0">Released</a> July 30th</li>
+          <li>Updated to Chrome 76 + Node 12.4</li>
+          <li>Lots of additional Promise support</li>
+          <li>A few breaking changes</li>
+      </ul>
+    </section>
+    <section>
+        <h2>React 16.9 Released<img src="../../shared/images/react-logo.png" style="width: 10%;"></h2>
+        <ul>
+          <li><a href="https://reactjs.org/blog/2019/08/08/react-v16.9.0.html">Released</a> August 8th</li>
+          <li>codemod: <em>componentWill* → UNSAFE_componentWill*</em></li>
+          <li>Deprecating  <em>[javascript:]</em> URLs and <em>[FactoryComponent]</em></li>
+          <li>Measure performance with &lt;React.Profiler&gt;</li>
+      </ul>
+    </section>
+    <section>
       
         <ul>
-          <li><a href="https://www.oddbird.net/true/?utm_source=CSS-Weekly&utm_campaign=Issue-373&utm_medium=email"><strong>True</strong>: Sass Unit Testing</a><br>
-            <span style="font-size: 50%"><strong>True</strong> is a full-featured unit-testing library for Sass. The core functionality is written in pure SassScript, so it can be used anywhere Sass is compiled. Advanced features are available with our test-runner integration and Mocha.</span>
-          </li>
           <li><a href="https://www.oddbird.net/true/?utm_source=CSS-Weekly&utm_campaign=Issue-373&utm_medium=email"><strong>True</strong>: Sass Unit Testing</a><br>
             <span style="font-size: 50%"><strong>True</strong> is a full-featured unit-testing library for Sass. The core functionality is written in pure SassScript, so it can be used anywhere Sass is compiled. Advanced features are available with our test-runner integration and Mocha.</span>
           </li>
         </ul>
       
       </section>
-    </section>
+  </section>
+
+
+      <!-- INDUSTRY NEWS -->
+      <section>
+        <section data-background-opacity=".5" data-background-image="../../shared/images/industry2.jpg">
+          <h1>Industry News</h1>
+        </section>
+        <section>
+            <h2>GitHub Supports CI/CD</h2>
+            <ul>
+              <li>GitHub <a href="https://github.com/features/actions">Actions</a> now support <a href="https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/">continuous integration</a></li>
+              <li>Reusable actions and workflows</li>
+              <li>Integrates with the <a href="https://github.com/features/package-registry">GitHub Package Registry</a></li>
+              <li>Free for public repos!</li>
+          </ul>
+        </section>
+
+      </section>
 
       <!-- UPCOMING EVENTS -->
       <section>
