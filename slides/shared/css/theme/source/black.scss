@@ -10,6 +10,11 @@
 @import "../template/settings";
 // ---------------------------------------------
 
+.events li span {
+	display: block;
+	margin-left: 5%;
+}
+
 
 // Include theme-specific fonts
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
