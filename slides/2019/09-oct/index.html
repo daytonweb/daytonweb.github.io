@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>The Dayton Web Developers</title>
+
+  <link rel="stylesheet" href="../../shared/css/reset.css" />
+  <link rel="stylesheet" href="../../shared/css/reveal.css" />
+  <link rel="stylesheet" href="../../shared/css/theme/black.css" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../../shared/lib/css/monokai.css" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = window.location.search.match(/print-pdf/gi)
+      ? "../../shared/css/print/pdf.css"
+      : "../../shared/css/print/paper.css";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<!-- ===[ 1. OPENING SLIDE ]================================================== -->
+      <section data-background-opacity=".5" data-background-image="../../shared/images/OregonEntrance.JPG">
+        <h2>Dayton Web Developers: October 2019</h2>
+        <h3 class="star">News from the Dayton Web Developers</h3>
+        <p class="indent">
+          &mdash; Allen May (<a href="https://twitter.com/AllenHMay">@AllenHMay</a>)
+        </p>
+        <h3 class="star">
+          What's good content, and how do you write it?
+        </h3>
+        <p class="indent">
+          &mdash; Samantha Enslen (<a href="https://twitter.com/dragonsammie">@DragonSammie</a>)
+        </p>
+      </section>
+
+
+<!-- ===[ 2. HOUSEKEEPING ]==================================================  -->
+      <section>
+        <section>
+          <h2>Housekeeping</h2>
+          <ul>
+            <li>Speakers and sponsors always wanted. Let's talk.</li>
+            <li>
+              Who is Hiring? Who is Available?
+              <ul>
+                <li><a href="http://theperducogroup.com/current-openings">The Perduco Group</a></li>
+                <ul>
+                  <li class="small">Mid-Level Full Stack Software Engineer</li>
+                  <li class="small">Mid-Level Data Architect</li>
+                  <li class="small">Junior Data Architect</li>
+                  <li class="small">Software Architect</li>
+                  <li class="small">Software Engineer</li>
+                </ul>
+                <li>#Jobs channel in Slack</li>
+                <ul>
+                  <li>
+                    <a href="http://www.riversideresearch.org/careers">Riverside Research</a> - Eileen Norton
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li>Wifi: BuildRight / betterweb</li>
+          </ul>
+        </section>
+
+<!-- ===[ 2.1 WHAT'S ON YOUR MIND ]============================================ -->
+        <section>
+          <h2>What's on your mind?</h2>
+          <div class="flexcontainer">
+            <div class="thirtychild"><img src="../../shared/images/Notepad.JPG" style="width: 50%" /></div>
+            <div class="seventychild">
+              <ul>
+                <li>What topic do you want us to bring to the group?</li>
+                <li>How can we make the Dayton Web Developers a better experience?</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+<!-- ===[ 2.2 SURVEY ]========================================================= -->
+        <!-- <section>
+            <h2>Aug 12 Survey Results:</h2>
+          <iframe width="878" height="623.5474683544304" seamless frameborder="0" scrolling="no"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTM5DdLCTontuF647sxogfnhmzM0KlunkrrVQe7F4D2eWOM1vq80GtSZR2HB1XtzlVe7L_4RPm4kO9f/pubchart?oid=769615052&amp;format=image"></iframe>
+        </section>  -->
+
+
+      </section>
+
+<!-- ===[ 3. SPONSORS ]======================================================= -->
+      <section>
+        <section data-background-opacity=".5" data-background-image="../../shared/images/nascar.jpg">
+          <h1>"Thank You" to Our Sponsors</h1>
+        </section>
+
+        <section data-transition="slide">
+          <svg width="520px" height="126px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g transform="matrix(1,0,0,1,-131.6,-494.5)">
+              <g>
+                <path
+                  d="M310.9,597.6L304.2,591L304.2,572.2L315.1,572.2L315.1,581.1C315.2,585 316.8,586.9 319.9,586.9C323.2,586.9 324.6,585 324.6,581.1L324.6,567.6L303.9,556L303.9,527.7L310.3,521.2L328.3,521.2L335.4,528.2L335.4,544.8L324.8,544.8L324.8,537.4C324.9,533.7 323.3,531.8 320.1,531.7C318.3,531.7 317.2,532.1 316.4,532.9C315.5,533.8 315.1,535.3 315.1,537.4L315.1,547.8L335.7,559.8L335.7,590.5L328.6,597.6L310.9,597.6Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M349.8,597.6L349.8,521.2L373.1,521.2L381.3,529.4L381.3,557.8L373.1,566L360.7,566L360.7,597.8L349.8,597.8L349.8,597.6ZM360.7,555.4L366,555.4C367.5,555.4 368.4,555.1 369,554.5C369.6,553.9 369.9,552.9 369.8,551.6L369.8,535.1C369.9,534 369.6,533.1 369,532.5C368.4,531.8 367.3,531.5 365.9,531.5L360.6,531.5L360.6,555.4L360.7,555.4Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M411.2,597.6L410.3,587.4L402.3,587.4L401.4,597.5L390.1,597.5L398.2,521.1L412.9,521.1L422.1,597.6L411.2,597.6ZM403,577L409.1,577L405.8,543.3L403,577Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M456.5,597.6L451.5,565.5L447.2,565.5L447.2,597.6L436.1,597.6L436.1,521.2L459.1,521.2L467.2,529.3L467.2,557.6L462.2,562.6L467.5,597.7L456.5,597.7L456.5,597.6ZM447.2,555L452.5,555C455.1,555 456.3,553.8 456.4,551.4L456.4,534.9C456.3,532.6 455.1,531.4 452.8,531.4L447.2,531.4L447.2,555Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M503.9,597.6L494.5,565.8L494.5,597.6L483.4,597.6L483.4,521.2L494.5,521.2L494.5,555.9L503.9,521.2L515,521.2L505.3,560.7L515.3,597.6L503.9,597.6Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M528,597.6L528,521.2L551.4,521.2L559.7,529.5L559.7,554.3L554.7,559.3L559.7,564.3L559.7,589.7L551.6,597.8L528,597.8L528,597.6ZM543.7,587L544.5,587C546.9,587 548.2,585.6 548.3,583L548.3,568.6C548.3,566 546.9,564.7 544,564.7L539,564.7L539,587L543.7,587ZM539,554.3L543.7,554.3C545.4,554.3 546.5,553.9 547.2,553.2C548,552.4 548.3,551 548.2,549.2L548.2,536C548.2,534.7 547.9,533.8 547.3,533.1C546.6,532.4 545.5,532 543.9,532L538.9,532L538.9,554.3L539,554.3Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M582.1,597.6L574.1,589.7L574.1,529L581.9,521.1L597.3,521.1L605.8,529.6L605.8,588.8L597,597.6L582.1,597.6ZM590.1,531.4C586.6,531.7 584.9,533.4 584.9,536.5L584.9,581.9C584.9,583.5 585.3,584.7 586.1,585.6C587,586.5 588.3,587 590.1,587.1C593.7,586.9 595.5,585.2 595.4,581.9L595.4,536.5C595.1,533.4 593.3,531.7 590.1,531.4Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M616.1,521.2L627.4,521.2L634.3,541L640.1,521.2L650.8,521.2L639.9,557.4L651.1,597.6L640.1,597.6L634,575.7L627.5,597.6L616.5,597.6L628.9,557.5L616.1,521.2Z"
+                  style="fill:white;fill-rule:nonzero;" />
+              </g>
+              <path
+                d="M171,571.1L171,583.6L175,583.6L182.4,571.1L171,571.1ZM213.6,543.9C217.1,543.9 219.9,541.1 219.9,537.6C219.9,534.1 217.1,531.3 213.6,531.3L213.5,531.3L212,531.3L204.6,543.8L213.6,543.9ZM171,531.4L171,545.7L192.1,531.4L171,531.4ZM213.6,571.1L211.5,571.1L193,583.6L213.6,583.6C217.1,583.6 219.9,580.8 219.9,577.3C219.9,573.9 217.1,571.1 213.6,571.1ZM252.9,494.5L136.3,494.5C133.7,494.5 131.6,496.6 131.6,499.2L131.6,615.8C131.6,618.4 133.7,620.5 136.3,620.5L252.9,620.5C255.5,620.5 257.6,618.4 257.6,615.8L257.6,499.2C257.7,496.6 255.5,494.5 252.9,494.5ZM233.8,556.1L218.1,566.7C222.3,568.5 225.2,572.6 225.2,577.4C225.2,583.8 220,589 213.6,589L185,589L165.6,602.1C165.5,602.2 165.4,602.2 165.2,602.2C164.8,602.2 164.5,601.9 164.5,601.5C164.5,601.4 164.5,601.2 164.6,601.1L171.8,588.9L166.2,588.9C165.8,588.9 165.5,588.6 165.5,588.2L165.5,566.3C165.5,565.9 165.8,565.6 166.2,565.6L190.5,565.6C190.9,565.6 191.1,565.9 191.1,566.3C191.1,566.4 191,566.6 191,566.7L179.6,586L218,560.1L159,560.1L151.6,560.1C151.2,560.1 150.9,559.8 150.9,559.4C150.9,559.2 151,558.9 151.2,558.8L165.6,549.1L165.6,531.2L165.6,526.5C165.6,526.1 165.9,525.9 166.3,525.9L200,525.9L214.8,516L222.6,510.7C222.7,510.6 222.8,510.6 223,510.6C223.4,510.6 223.7,510.9 223.7,511.3C223.7,511.4 223.7,511.6 223.6,511.7L215.1,526.1C220.8,526.8 225.2,531.7 225.2,537.6C225.2,544 220,549.2 213.6,549.2L213.4,549.2L201.5,549.2L196.5,549.2C196.1,549.2 195.8,548.9 195.8,548.5C195.8,548.4 195.8,548.3 195.9,548.2L208.6,526.7L167,554.7L233.6,554.7C234,554.7 234.3,555 234.3,555.4C234.2,555.8 234,556 233.8,556.1Z"
+                style="fill:white;fill-rule:nonzero;" />
+            </g>
+          </svg>
+
+          <p>
+            Sparkbox always values the tech community and are proud to support
+            the Dayton Web Developers group.<br>
+            Check out their web design and development articles on <a href="seesparkbox.com/foundry">The Foundry</a>.
+          </p>
+        </section>
+
+        <section data-transition="slide">
+          <svg width="520px" height="126px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g transform="matrix(1,0,0,1,-131.6,-494.5)">
+              <g>
+                <path
+                  d="M310.9,597.6L304.2,591L304.2,572.2L315.1,572.2L315.1,581.1C315.2,585 316.8,586.9 319.9,586.9C323.2,586.9 324.6,585 324.6,581.1L324.6,567.6L303.9,556L303.9,527.7L310.3,521.2L328.3,521.2L335.4,528.2L335.4,544.8L324.8,544.8L324.8,537.4C324.9,533.7 323.3,531.8 320.1,531.7C318.3,531.7 317.2,532.1 316.4,532.9C315.5,533.8 315.1,535.3 315.1,537.4L315.1,547.8L335.7,559.8L335.7,590.5L328.6,597.6L310.9,597.6Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M349.8,597.6L349.8,521.2L373.1,521.2L381.3,529.4L381.3,557.8L373.1,566L360.7,566L360.7,597.8L349.8,597.8L349.8,597.6ZM360.7,555.4L366,555.4C367.5,555.4 368.4,555.1 369,554.5C369.6,553.9 369.9,552.9 369.8,551.6L369.8,535.1C369.9,534 369.6,533.1 369,532.5C368.4,531.8 367.3,531.5 365.9,531.5L360.6,531.5L360.6,555.4L360.7,555.4Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M411.2,597.6L410.3,587.4L402.3,587.4L401.4,597.5L390.1,597.5L398.2,521.1L412.9,521.1L422.1,597.6L411.2,597.6ZM403,577L409.1,577L405.8,543.3L403,577Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M456.5,597.6L451.5,565.5L447.2,565.5L447.2,597.6L436.1,597.6L436.1,521.2L459.1,521.2L467.2,529.3L467.2,557.6L462.2,562.6L467.5,597.7L456.5,597.7L456.5,597.6ZM447.2,555L452.5,555C455.1,555 456.3,553.8 456.4,551.4L456.4,534.9C456.3,532.6 455.1,531.4 452.8,531.4L447.2,531.4L447.2,555Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M503.9,597.6L494.5,565.8L494.5,597.6L483.4,597.6L483.4,521.2L494.5,521.2L494.5,555.9L503.9,521.2L515,521.2L505.3,560.7L515.3,597.6L503.9,597.6Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M528,597.6L528,521.2L551.4,521.2L559.7,529.5L559.7,554.3L554.7,559.3L559.7,564.3L559.7,589.7L551.6,597.8L528,597.8L528,597.6ZM543.7,587L544.5,587C546.9,587 548.2,585.6 548.3,583L548.3,568.6C548.3,566 546.9,564.7 544,564.7L539,564.7L539,587L543.7,587ZM539,554.3L543.7,554.3C545.4,554.3 546.5,553.9 547.2,553.2C548,552.4 548.3,551 548.2,549.2L548.2,536C548.2,534.7 547.9,533.8 547.3,533.1C546.6,532.4 545.5,532 543.9,532L538.9,532L538.9,554.3L539,554.3Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M582.1,597.6L574.1,589.7L574.1,529L581.9,521.1L597.3,521.1L605.8,529.6L605.8,588.8L597,597.6L582.1,597.6ZM590.1,531.4C586.6,531.7 584.9,533.4 584.9,536.5L584.9,581.9C584.9,583.5 585.3,584.7 586.1,585.6C587,586.5 588.3,587 590.1,587.1C593.7,586.9 595.5,585.2 595.4,581.9L595.4,536.5C595.1,533.4 593.3,531.7 590.1,531.4Z"
+                  style="fill:white;fill-rule:nonzero;" />
+                <path
+                  d="M616.1,521.2L627.4,521.2L634.3,541L640.1,521.2L650.8,521.2L639.9,557.4L651.1,597.6L640.1,597.6L634,575.7L627.5,597.6L616.5,597.6L628.9,557.5L616.1,521.2Z"
+                  style="fill:white;fill-rule:nonzero;" />
+              </g>
+              <path
+                d="M171,571.1L171,583.6L175,583.6L182.4,571.1L171,571.1ZM213.6,543.9C217.1,543.9 219.9,541.1 219.9,537.6C219.9,534.1 217.1,531.3 213.6,531.3L213.5,531.3L212,531.3L204.6,543.8L213.6,543.9ZM171,531.4L171,545.7L192.1,531.4L171,531.4ZM213.6,571.1L211.5,571.1L193,583.6L213.6,583.6C217.1,583.6 219.9,580.8 219.9,577.3C219.9,573.9 217.1,571.1 213.6,571.1ZM252.9,494.5L136.3,494.5C133.7,494.5 131.6,496.6 131.6,499.2L131.6,615.8C131.6,618.4 133.7,620.5 136.3,620.5L252.9,620.5C255.5,620.5 257.6,618.4 257.6,615.8L257.6,499.2C257.7,496.6 255.5,494.5 252.9,494.5ZM233.8,556.1L218.1,566.7C222.3,568.5 225.2,572.6 225.2,577.4C225.2,583.8 220,589 213.6,589L185,589L165.6,602.1C165.5,602.2 165.4,602.2 165.2,602.2C164.8,602.2 164.5,601.9 164.5,601.5C164.5,601.4 164.5,601.2 164.6,601.1L171.8,588.9L166.2,588.9C165.8,588.9 165.5,588.6 165.5,588.2L165.5,566.3C165.5,565.9 165.8,565.6 166.2,565.6L190.5,565.6C190.9,565.6 191.1,565.9 191.1,566.3C191.1,566.4 191,566.6 191,566.7L179.6,586L218,560.1L159,560.1L151.6,560.1C151.2,560.1 150.9,559.8 150.9,559.4C150.9,559.2 151,558.9 151.2,558.8L165.6,549.1L165.6,531.2L165.6,526.5C165.6,526.1 165.9,525.9 166.3,525.9L200,525.9L214.8,516L222.6,510.7C222.7,510.6 222.8,510.6 223,510.6C223.4,510.6 223.7,510.9 223.7,511.3C223.7,511.4 223.7,511.6 223.6,511.7L215.1,526.1C220.8,526.8 225.2,531.7 225.2,537.6C225.2,544 220,549.2 213.6,549.2L213.4,549.2L201.5,549.2L196.5,549.2C196.1,549.2 195.8,548.9 195.8,548.5C195.8,548.4 195.8,548.3 195.9,548.2L208.6,526.7L167,554.7L233.6,554.7C234,554.7 234.3,555 234.3,555.4C234.2,555.8 234,556 233.8,556.1Z"
+                style="fill:white;fill-rule:nonzero;" />
+            </g>
+          </svg>
+              <img src="../../shared/images/SparkboxFoundry2019-10-02.png" />
+            
+        </section>
+        <section data-transition="slide">
+            <svg width="520px" height="126px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+              <g transform="matrix(1,0,0,1,-131.6,-494.5)">
+                <g>
+                  <path
+                    d="M310.9,597.6L304.2,591L304.2,572.2L315.1,572.2L315.1,581.1C315.2,585 316.8,586.9 319.9,586.9C323.2,586.9 324.6,585 324.6,581.1L324.6,567.6L303.9,556L303.9,527.7L310.3,521.2L328.3,521.2L335.4,528.2L335.4,544.8L324.8,544.8L324.8,537.4C324.9,533.7 323.3,531.8 320.1,531.7C318.3,531.7 317.2,532.1 316.4,532.9C315.5,533.8 315.1,535.3 315.1,537.4L315.1,547.8L335.7,559.8L335.7,590.5L328.6,597.6L310.9,597.6Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                  <path
+                    d="M349.8,597.6L349.8,521.2L373.1,521.2L381.3,529.4L381.3,557.8L373.1,566L360.7,566L360.7,597.8L349.8,597.8L349.8,597.6ZM360.7,555.4L366,555.4C367.5,555.4 368.4,555.1 369,554.5C369.6,553.9 369.9,552.9 369.8,551.6L369.8,535.1C369.9,534 369.6,533.1 369,532.5C368.4,531.8 367.3,531.5 365.9,531.5L360.6,531.5L360.6,555.4L360.7,555.4Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                  <path
+                    d="M411.2,597.6L410.3,587.4L402.3,587.4L401.4,597.5L390.1,597.5L398.2,521.1L412.9,521.1L422.1,597.6L411.2,597.6ZM403,577L409.1,577L405.8,543.3L403,577Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                  <path
+                    d="M456.5,597.6L451.5,565.5L447.2,565.5L447.2,597.6L436.1,597.6L436.1,521.2L459.1,521.2L467.2,529.3L467.2,557.6L462.2,562.6L467.5,597.7L456.5,597.7L456.5,597.6ZM447.2,555L452.5,555C455.1,555 456.3,553.8 456.4,551.4L456.4,534.9C456.3,532.6 455.1,531.4 452.8,531.4L447.2,531.4L447.2,555Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                  <path
+                    d="M503.9,597.6L494.5,565.8L494.5,597.6L483.4,597.6L483.4,521.2L494.5,521.2L494.5,555.9L503.9,521.2L515,521.2L505.3,560.7L515.3,597.6L503.9,597.6Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                  <path
+                    d="M528,597.6L528,521.2L551.4,521.2L559.7,529.5L559.7,554.3L554.7,559.3L559.7,564.3L559.7,589.7L551.6,597.8L528,597.8L528,597.6ZM543.7,587L544.5,587C546.9,587 548.2,585.6 548.3,583L548.3,568.6C548.3,566 546.9,564.7 544,564.7L539,564.7L539,587L543.7,587ZM539,554.3L543.7,554.3C545.4,554.3 546.5,553.9 547.2,553.2C548,552.4 548.3,551 548.2,549.2L548.2,536C548.2,534.7 547.9,533.8 547.3,533.1C546.6,532.4 545.5,532 543.9,532L538.9,532L538.9,554.3L539,554.3Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                  <path
+                    d="M582.1,597.6L574.1,589.7L574.1,529L581.9,521.1L597.3,521.1L605.8,529.6L605.8,588.8L597,597.6L582.1,597.6ZM590.1,531.4C586.6,531.7 584.9,533.4 584.9,536.5L584.9,581.9C584.9,583.5 585.3,584.7 586.1,585.6C587,586.5 588.3,587 590.1,587.1C593.7,586.9 595.5,585.2 595.4,581.9L595.4,536.5C595.1,533.4 593.3,531.7 590.1,531.4Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                  <path
+                    d="M616.1,521.2L627.4,521.2L634.3,541L640.1,521.2L650.8,521.2L639.9,557.4L651.1,597.6L640.1,597.6L634,575.7L627.5,597.6L616.5,597.6L628.9,557.5L616.1,521.2Z"
+                    style="fill:white;fill-rule:nonzero;" />
+                </g>
+                <path
+                  d="M171,571.1L171,583.6L175,583.6L182.4,571.1L171,571.1ZM213.6,543.9C217.1,543.9 219.9,541.1 219.9,537.6C219.9,534.1 217.1,531.3 213.6,531.3L213.5,531.3L212,531.3L204.6,543.8L213.6,543.9ZM171,531.4L171,545.7L192.1,531.4L171,531.4ZM213.6,571.1L211.5,571.1L193,583.6L213.6,583.6C217.1,583.6 219.9,580.8 219.9,577.3C219.9,573.9 217.1,571.1 213.6,571.1ZM252.9,494.5L136.3,494.5C133.7,494.5 131.6,496.6 131.6,499.2L131.6,615.8C131.6,618.4 133.7,620.5 136.3,620.5L252.9,620.5C255.5,620.5 257.6,618.4 257.6,615.8L257.6,499.2C257.7,496.6 255.5,494.5 252.9,494.5ZM233.8,556.1L218.1,566.7C222.3,568.5 225.2,572.6 225.2,577.4C225.2,583.8 220,589 213.6,589L185,589L165.6,602.1C165.5,602.2 165.4,602.2 165.2,602.2C164.8,602.2 164.5,601.9 164.5,601.5C164.5,601.4 164.5,601.2 164.6,601.1L171.8,588.9L166.2,588.9C165.8,588.9 165.5,588.6 165.5,588.2L165.5,566.3C165.5,565.9 165.8,565.6 166.2,565.6L190.5,565.6C190.9,565.6 191.1,565.9 191.1,566.3C191.1,566.4 191,566.6 191,566.7L179.6,586L218,560.1L159,560.1L151.6,560.1C151.2,560.1 150.9,559.8 150.9,559.4C150.9,559.2 151,558.9 151.2,558.8L165.6,549.1L165.6,531.2L165.6,526.5C165.6,526.1 165.9,525.9 166.3,525.9L200,525.9L214.8,516L222.6,510.7C222.7,510.6 222.8,510.6 223,510.6C223.4,510.6 223.7,510.9 223.7,511.3C223.7,511.4 223.7,511.6 223.6,511.7L215.1,526.1C220.8,526.8 225.2,531.7 225.2,537.6C225.2,544 220,549.2 213.6,549.2L213.4,549.2L201.5,549.2L196.5,549.2C196.1,549.2 195.8,548.9 195.8,548.5C195.8,548.4 195.8,548.3 195.9,548.2L208.6,526.7L167,554.7L233.6,554.7C234,554.7 234.3,555 234.3,555.4C234.2,555.8 234,556 233.8,556.1Z"
+                  style="fill:white;fill-rule:nonzero;" />
+              </g>
+            </svg>
+            <p>
+              "Thank you" Bryan Braun for being here for us!<br />
+              <img src="../../shared/images/bryan-braun.jpg" style="width: 200px;" />
+            </p>
+          </section>
+
+      </section>
+
+<!-- ===[ 4. LANGUAGES, LIBRARIES & FRAMEWORKS ]============================== -->
+<section>
+    <section data-background-opacity=".5" data-background-image="../../shared/images/html-js-css.png">
+      <h1>Languages, Libraries & Frameworks</h1>
+  </section>
+    <section>
+        <h2>Chrome 77</h2>
+        Released September 17th — <a href="https://developers.google.com/web/updates/2019/09/nic77">Release Notes</a>
+
+        <h3>Largest Contentful Paint</h3>
+        <ul>
+          <li>render time of the largest content element</li>
+          <li>Best real-world way to measure user-facing performance</li>
+          <li>Uses the PerformanceEntry event of type largest-contentful-paint</li>
+      </ul>
+    </section>
+  </section>
+
+<!-- ===[ 5. INDUSTRY NEWS ]================================================== -->
+      <section>
+        <section data-background-opacity=".5" data-background-image="../../shared/images/industry2.jpg">
+          <h1>Industry News</h1>
+        </section>
+        
+        <section>
+            <h2>Technology First - Call for papers</h2>
+            <div class="flexcontainer">
+            <div class="twochild">
+              <img src="../../shared/images/TechFirstCFP.png" />
+            </div>
+            <div class="twochild">
+            OISC 2020 CALL FOR PRESENTATIONS!<br>
+            Proposal Deadline: October 25th! <br>
+            <small>Technology First is seeking proposals for speaker participation in the March 11, 2020 Ohio Information Security Conference hosted in Dayton, Ohio.<br>
+              A session can be a formal presentation of a successful implementation, administrative solution, or technical solution.<br>
+              Topic content must focus on information security and may range from introductory to advanced or from operational to strategic.<br>
+              Each program session will last 50 minutes, including 10 minutes for Q&A.</small>
+            </div>
+          </div>
+              <a href="https://technologyfirst.org/blog/1255-oisc-2020.html">technologyfirst.org/blog/1255-oisc-2020.html</a>
+        </section>
+
+      </section>
+
+<!-- ===[ 6. UPCOMING EVENTS ]================================================ -->
+      <section>
+        <section>
+          <h1>Upcoming Events...</h1>
+        </section>
+        <section>
+            <h2>This Month</h2>
+            
+            <ul class="events">
+                <small><li>
+                  
+                    October 12th: <strong>Dayton Women Code Together</strong>
+                    <span style="font-size: 75%">
+                      <a href="https://www.meetup.com/Dayton-Code-Together/events/mlgwhryznbqb/">
+                        Tech Talk</a>
+                      </span>
+                    
+                  </li>
+                <li>
+                    October 15th: <strong>New to the Web</strong>
+                    <span style="font-size: 75%">                        
+                      <a href="https://www.meetup.com/dayton-web-developers/events/lhdnfqyznbtb/">
+                        Working with Databases using SQL in MySQL and PostgreSQL</a>
+                      </span>
+                  </li>
+                  <li>
+                      October 16th: <strong>Gem City JS</strong>
+                      <span style="font-size: 75%">
+                        <a href="https://www.meetup.com/Gem-City-JS/events/264953862/">
+                          Beefing Up Your Security Brain: Addressing Dependency Vulnerabilities, Sara Cope</a>
+                        </span>
+                    </li>
+                    <li>
+                        October 23rd: <strong>Dayton .Net Developers Group</strong>
+                        <span style="font-size: 75%">
+                          <a href="https://www.meetup.com/daytondevgroup/events/zdshjryznbfc/">
+                            A Tour of Azure Monitor – Mike Wood</a>
+                          </span>
+                      </li>
+                      <li>
+                          October 30th: <strong>Smart Data Lunch and Learn</strong>
+                          <span style="font-size: 75%">
+                            <a href="https://smartdata.net/2019/09/20/auto-draft/">
+                              Creating Windows Services with .NET Core</a>
+                            </span>
+                        </li>
+                      </small>
+            </ul>
+
+          </section>
+
+          <section>
+            <h2>Next Month</h2>
+            <ul class="events">
+                <li>
+                    November 6th: <strong>Dayton Web Developers</strong>
+                    <span style="font-size: 75%">
+                        
+                      <a href="https://www.meetup.com/dayton-web-developers/events/ndsqfnyzpbjb/">
+                        Breaking Down Designs Into Web Components by Marissa Douglass</a>
+                        <img src="../../shared/images/MarissaDouglass.png" style="width: 20%; display: block">
+                        Marissa will show us how to break down a design into components and implement those components in our website frameworks.
+                      </span>
+                  </li>
+                  
+            </ul>
+
+          </section>
+      </section>
+
+<!-- ===[ 7. THANK YOU ]================================================== -->
+      <section>
+        <h3>Thank you for being part of the<br>
+          <span class="bolder">Dayton Web Developers</span> community!</h3>
+        <a href="http://daytonweb.github.io/slides/">http://daytonweb.github.io/slides/</a><br>
+        Allen May (<a href="https://twitter.com/AllenHMay">@AllenHMay</a>)
+        <p><img src="../../shared/images/DWDBanner.jpeg"></p>
+      </section>
+    </div>
+  </div>
+
+  <script src="../../shared/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [
+        { src: "../../shared/plugin/markdown/marked.js" },
+        { src: "../../shared/plugin/markdown/markdown.js" },
+        { src: "../../shared/plugin/notes/notes.js", async: true },
+        { src: "../../shared/plugin/highlight/highlight.js", async: true }
+      ]
+    });
+  </script>
+</body>
+
+</html>

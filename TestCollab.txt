@@ -1,0 +1,5 @@
+Teal (host) - Teal Text
+Orange - Orange Text
+Green - Green Text
+Yellow - Yellow Text
+Purple - Purple Text

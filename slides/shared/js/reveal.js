@@ -39,7 +39,7 @@
 
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions
-			width: 1024,
+			width: 1228,
 			height: 700,
 
 			// Factor of the display size that should remain empty around the content

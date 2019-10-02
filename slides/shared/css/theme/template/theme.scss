@@ -34,6 +34,30 @@ body {
 	font-weight: inherit;
 }
 
+.flexcontainer {
+	width: 100%;
+	display: flex;
+}
+
+.flexcontainer .twochild {
+	width: 50%;
+	padding: 5px;
+}
+
+.flexcontainer .thirtychild {
+	width: 30%;
+	padding: 5px;
+}
+
+.flexcontainer .seventychild {
+	width: 70%;
+	padding: 5px;
+}
+
+.gridcontainer {
+	display: grid;
+}
+
 /*********************************************
  * HEADERS
  *********************************************/
@@ -229,6 +253,10 @@ body {
 	font-size: 0.6em;
 	line-height: 1.2em;
 	vertical-align: top;
+}
+
+.reveal .small {
+	font-size: 0.6em;
 }
 
 .reveal small * {
