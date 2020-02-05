@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>The Dayton Web Developers</title>
+
+  <link rel="stylesheet" href="../../shared/css/reset.css" />
+  <link rel="stylesheet" href="../../shared/css/reveal.css" />
+  <link rel="stylesheet" href="../../shared/css/theme/black.css" />
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="../../shared/lib/css/monokai.css" />
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = window.location.search.match(/print-pdf/gi)
+      ? "../../shared/css/print/pdf.css"
+      : "../../shared/css/print/paper.css";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<!-- ===[ 1. OPENING SLIDE ]================================================== -->
+      <section data-background-opacity=".5" data-background-image="../../shared/images/FireBlockDistrict.jpg">
+        <h1>Dayton Web Developers <small>February 2020</small></h1>
+        <small>
+
+        <h3 class="star">News from the Dayton Web Developers</h3>
+        <p class="indent">
+          &mdash; Allen May (<a href="https://twitter.com/AllenHMay">@AllenHMay</a>)
+        </p>
+        <h3 class="star">
+          Lightning Talk #13</h3>
+          
+          <ul>
+          <li>NestJS (https://nestjs.com/) - Joe Wirtley</li>
+          <li>Recruiters, who should you trust? - Jon Green</li>
+          <li>Design Concepts - Ricardo Zea</li>
+          <li>Exploring refactoring and debugging tools in VSCode - Allen May</li>
+        </ul>
+      </small>
+
+
+      </section>
+
+
+<!-- ===[ 2. HOUSEKEEPING ]==================================================  -->
+      <section>
+          <section data-background-opacity=".5" data-background-image="../../shared/images/HouseKeeping.jpg">
+          <h1>Housekeeping</h1>
+          </section>
+          <section>
+          <ul>
+            <li>Bathrooms</li>
+            <li>Wifi: BuildRight / betterweb</li>
+            <li>Interested in teaching web topics?</li>
+            <li>Speakers and sponsors always wanted. Let's talk.</li>
+            <li>
+              Who is Hiring? Who is Available?
+              <ul>
+                <li><strong>#Jobs</strong> channel in Slack</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+<!-- ===[ 2.1 WHAT'S ON YOUR MIND ]============================================ -->
+        <section>
+          <h2>What's on your mind?</h2>
+          <div class="flexcontainer">
+            <div class="thirtychild"><img src="../../shared/images/Notepad.JPG" style="width: 50%" /></div>
+            <div class="seventychild">
+              <ul>
+                <li>What topic do you want us to bring to the group?</li>
+                <li>How can we make the Dayton Web Developers a better experience?</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+<!-- ===[ 2.2 SURVEY ]========================================================= -->
+        <!-- <section>
+            <h2>Aug 12 Survey Results:</h2>
+          <iframe width="878" height="623.5474683544304" seamless frameborder="0" scrolling="no"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTM5DdLCTontuF647sxogfnhmzM0KlunkrrVQe7F4D2eWOM1vq80GtSZR2HB1XtzlVe7L_4RPm4kO9f/pubchart?oid=769615052&amp;format=image"></iframe>
+        </section>  -->
+
+
+      </section>
+
+<!-- ===[ 3. SPONSORS ]======================================================= -->
+      <section>
+        <section data-background-opacity=".5" data-background-image="../../shared/images/nascar.jpg">
+          <h1>"Thank You" to Our Sponsors</h1>
+        </section>
+        <section>
+          <img src="../../shared/images/AISslide.png">
+        </section>
+        <section>
+            <img src="../../shared/images/Manning Publishing.svg" class="plain"/>
+            <h2><a href="https://www.manning.com">Manning.com</h2>
+            <ul>
+              <li><strong>mtpwbd19</strong> - 40% discount code (good for all products in all formats) aimed at all event attendees</li>
+              <li>3 free eBook codes</li>
+            </ul>
+        </section>
+        <section data-transition="slide">
+          
+          <img src="../../shared/images/SBX_logo_horiz_lockup_white_NoWhiteSpace.svg" class="plain"/>
+          <p>
+            Sparkbox always values the tech community and are proud to support
+            the Dayton Web Developers group.<br>
+            Check out their web design and development articles on <a href="https://seesparkbox.com/foundry">The Foundry</a>.<br>
+            While you're there, signup for their monthly email recap of what they've been posting in the Foundry.
+          </p>
+        </section>
+
+        <section data-transition="slide">
+            <img src="../../shared/images/SBX_logo_horiz_lockup_white_NoWhiteSpace.svg" class="plain"/>
+            <p class="flexcontainer">
+              <span class="twochild">
+                "Thank you" Bryan Braun<br>for being here for us!<br>
+                <img src="../../shared/images/bryan-braun.jpg" style="width: 200px;" />
+              </span>
+              <span class="twochild">
+                "Thank you" Dar Stockler<br>for organizing the food!<br>
+                <img src="../../shared/images/dar-stockler.jpg" style="width: 200px;" />
+              </span>
+            </p>
+          </section>
+
+      </section>
+
+<!-- ===[ 4. LANGUAGES, LIBRARIES & FRAMEWORKS ]============================== -->
+<!-- <section>
+    <section data-background-opacity=".5" data-background-image="../../shared/images/html-js-css.png">
+      <h1>Languages, Libraries & Frameworks</h1>
+  </section>
+    <section>
+      <ul>
+        <li><a hfre="https://blog.npmjs.org/post/189152172465/release-6131">npm@6.13.1</a> released 11-18-2019<br>
+          Fixes some bugs and includes changes on the docs by the community.<br>
+          <em>npm i -g npm@latest</em></li>
+          <li><a href="https://eslint.org/blog/2019/11/eslint-v6.7.0-released">ESLint v6.7.0</a> released 11-22-2019</li>
+          <ul>
+            <li>A new "Suggestions API" for rule authors and integrations</li>
+            <li>5 new default rules</li>
+            <li>A long list of Deprecations, New Features, Enhancements and Bug Fixes</li>
+          </ul>
+        </ul>
+      </section>
+      <section>
+        <h2>Other New Releases:</h2>
+        <ul>
+          <li><a href="https://github.com/babel/babel/releases/tag/v7.7.4">Babel 7.7.4</a> — The JavaScript transpiler.</li>
+          <ul>
+            <li>A list of bug fixes, code cleanup and "polish"</li>
+          </ul>
+          <li><a href="https://github.com/vadimdemedes/ink">Ink 2.6.0</a> — Like React but for building CLI apps.</li>
+          <li><a href="https://github.com/gpujs/gpu.js">GPU.js 2.3.0</a> — GPU-accelerated JavaScript.</li>
+          <li><a href="https://github.com/jcubic/jquery.terminal">jQuery.Terminal 2.9.0</a> — Add terminal experiences to your site/app.</li>
+      </ul>
+    </section>
+  </section> -->
+
+<!-- ===[ 5. INDUSTRY NEWS ]================================================== -->
+      <!-- <section>
+        <section data-background-opacity=".5" data-background-image="../../shared/images/industry2.jpg">
+          <h1>Industry News</h1>
+        </section>
+        <section>
+            <h2><a href="https://24ways.org/">24 Ways</a> 2019 advent calendar for web geeks</h2>
+            <ol>
+              <li>Making a Better Custom Select Element</li>
+              <li>Twelve Days of Front End Testing</li>
+              <li>Future Accessibility Guidelines—for People Who Can’t Wait to Read Them</li>
+              <li>An Introduction to Variable Fonts</li>
+            </ol>
+        
+        </section>        
+        <section>
+            <h2><a href="https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results">The Front-End Tooling Survey 2019</a></h2>
+            <ul>
+              <li>3,005 developers answered 27</li>
+            </ul>
+        
+        </section>
+        <section>
+          <ul>
+              <li>Sass usage is still on the increase (almost 12%), which surprised me because I would have thought it was pretty stagnant.</li>
+              <li>15.4% of respondents have never heard of PostCSS.</li>
+              <li>Bootstrap is on the decline and "no framework" is on the increase (though only slightly).</li>
+              <li>CSS-in-JS had a 7.6% increase but 55.3% of respondents still don't use a CSS-in-JS tool.</li>
+          </ul>
+        </section>
+        <section>
+            <ul>
+                <li>Flexbox and Grid usage are way up.</li>
+                <li>NPM Scripts as a task runner had a 16.4% increase while almost all other task runners are on the decline.</li>
+                <li>React usage is up 4.8% and jQuery is way down, though it's still at 36.8% usage, which seems a little high.</li>
+                <li>Source: <a href="https://mailchi.mp/webtoolsweekly/web-tools-331?e=601ef04b2b">Web Tools Weekly</a></li>
+            </ul>
+           
+        </section>
+        <section>
+            <h2><a href="https://stateofjs.com/">The "State of JavaScript" 2019 Survey<br>StateOfJS.com</a></h2>
+            Help find out which libraries developers want to learn next, 
+            which have the best satisfaction ratings, and much more.
+        </section>
+        
+      </section> -->
+
+<!-- ===[ 6. TOOLS ]================================================ -->
+      <!-- <section>
+        <section data-background-opacity=".5" data-background-image="../../shared/images/ToolsOfTheTrade.jpg">
+          <h1>Tools of the trade</h1>
+        </section>
+        <section>
+          <ul>
+            <li><a href="https://github.com/KilledByAPixel/JSONCrush">JSONCrush</a> - Compresses JSON Into URI Friendly Strings</li>
+            <li><a href="https://zenscrape.com/">ZenScrape</a> - Scrape any website without writing a single line of code</li>
+          </ul>
+        </section>
+      </section> -->
+<!-- ===[ 7. UPCOMING EVENTS ]================================================ -->
+      <section>
+          <section data-background-opacity=".5" data-background-image="../../shared/images/UpcomingEvents.jpg">
+          <h1>Upcoming Events...</h1>
+        </section>
+        <section>
+            <ul class="events">
+              <li>
+                <strong><a target="new" href="https://www.meetup.com/find/events/?allMeetups=true&radius=10&userFreeform=Dayton%2C+OH&mcId=z45420&mcName=Dayton%2C+OH&eventFilter=my">
+                  Meetup.com Listings</a></strong>
+              </li>
+              <li>
+                <strong><a target="new" href="https://smartdata.net/lunch/">Smart Data Lunch & Learn</a></strong>
+              </li>
+            </ul>
+            
+            <!-- <ul class="events">
+                <small>
+                    <li>
+                        <strong>New To The Web</strong>: <a href="https://www.meetup.com/dayton-web-developers/events/mzjjlryzqbwb/">
+                          Responsive Typography System using a Modular Scale</a> - Ricardo Zea
+                        <ul>
+                          <li>Where: Brixx Ice Company</li>
+                          <li>When: Tuesday, December 17th @6pm </li>
+                        </ul>
+                      </li>
+                      <li>
+                          <strong>Gem City JS</strong>: <a href="https://www.meetup.com/Gem-City-JS/events/265120697/">
+                            JavaScript IOUs: Asynchronous JavaScript Code with Kris Hatcher
+Corinne Ling</a> - Kris Hatcher
+                          <ul>
+                            <li>Where: Sparkbox Maker Space</li>
+                            <li>When: Wednesday, December 18th @noon </li>
+                          </ul>
+                        </li>
+                </small>
+            </ul> -->
+          </section>
+      </section>
+
+<!-- ===[ 8. THANK YOU ]================================================== -->
+      <section>
+        <h3>Thank you for being part of the<br>
+          <span class="bolder">Dayton Web Developers</span> community!</h3>
+        <a href="http://daytonweb.github.io/slides/">http://daytonweb.github.io/slides/</a><br>
+        Allen May (<a href="https://twitter.com/AllenHMay">@AllenHMay</a>)
+        <p><img src="../../shared/images/DWDBanner.jpeg"></p>
+      </section>
+    </div>
+  </div>
+
+  <script src="../../shared/js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      dependencies: [
+        { src: "../../shared/plugin/markdown/marked.js" },
+        { src: "../../shared/plugin/markdown/markdown.js" },
+        { src: "../../shared/plugin/notes/notes.js", async: true },
+        { src: "../../shared/plugin/highlight/highlight.js", async: true }
+      ]
+    });
+  </script>
+</body>
+
+</html>
